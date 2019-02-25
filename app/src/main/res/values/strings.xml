@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">AttendanceApp</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="Slogan">Move with us</string>
+
+
+    <string name="verify_account1">We sent a code to your number</string>
+    <string name="verify_account2">To complete your mobile number verification</string>
+    <string name="verify_account3">please enter a 6-digit code.</string>
+    <string name="hint_text">Enter Confirmation Token</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="Sign_up">Sign up</string>
+    <string name="Log_in">Log in</string>
+    <string name="details">Forget Password?</string>
+
+    <string name="verify_account">SignIn</string>
+
+    <string name="User_email">User Email</string>
+
+    <string name="User_Name">User Name</string>
+
+    <string name="logged_in">Keep me logged in</string>
+    <string name="Create">Sign In Account</string>
+    <string-array name="truck_type">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string name="title_activity_main_page">MainPageActivity</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_post_load">PostLoadActivity</string>
+
+    <string name="title_activity_document">DocumentActivity</string>
+    <string name="title_activity_document1">DocumentActivity1</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_details">Details</string>
+    <string name="title_activity_current_locationn">Map</string>
+
+    <string name="tracking_enabled_notif">Tracking is currently enabled. Tap to cancel.</string>
+    <string name="test_email">abdulbasit@gmail.com</string>
+    <string name="test_password">123456</string>
+    <string name="firebase_path">location</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="material_type">Material Type</string>
+    <string name="weight">Weight</string>
+    <string name="truck_type">Truck Type</string>
+    <string name="load_type">Load Type</string>
+    <string name="any">Any</string>
+    <string name="full">Full</string>
+    <string name="part">Part</string>
+    <string name="pick_date">Pick Up Date</string>
+    <string name="click_here">Click Here</string>
+    <string name="pick_time">Pick Time</string>
+    <string name="post">Post</string>
+    <string name="select">Select</string>
+    <string name="select_current_location">Current Location</string>
+    <string name="enter_location">"Enter Location"</string>
+
+    <string name="ok">OK</string>
+    <string name="rate">Rate</string>
+
+    <string name="comment">Comment</string>
+    <string name="comment_here">Comment here</string>
+    <string name="title_activity_tabbed">tabbedActivity</string>
+</resources>
