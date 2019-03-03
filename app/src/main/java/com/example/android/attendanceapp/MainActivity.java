@@ -19,7 +19,9 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.ArrayList;
@@ -54,6 +56,8 @@ Session session;
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 mFirebaseFirestore=FirebaseFirestore.getInstance();
+
+teacherCollectoin=mFirebaseFirestore.collection("teacher").document("abc");
 
 //        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 //        fab.setOnClickListener(new View.OnClickListener() {
@@ -109,20 +113,25 @@ mFirebaseFirestore=FirebaseFirestore.getInstance();
 }
 
 private void addListner(){
-        Log.d(TAG, "addListner: ");
-teacherCollectoin=mFirebaseFirestore.collection("teacher").document("a@gmail.com");
+        teacherCollectoin.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+            @Override
+            public void onSuccess(DocumentSnapshot documentSnapshot) {
+                Log.d(TAG, "onSuccess: ");
+            }
+        });
 //teacherCollectoin.get().addOnSuccessListener(
 //        new OnSuccessListener<DocumentSnapshot>() {
 //    @Override
 //    public void onSuccess(DocumentSnapshot documentSnapshot) {
-//        Log.d(TAG, "onSuccess: in addlistner ");
-//        mTeacher = documentSnapshot.toObject(teacher.class);
-//        NumberOfOfferCourses = mTeacher.getNoOfCourseOffer();
+//        Toast.makeText(MainActivity.this, "ok", Toast.LENGTH_SHORT).show();
+////        mTeacher = documentSnapshot.toObject(teacher.class);
+////        NumberOfOfferCourses = Integer.parseInt(documentSnapshot.get("noOfCourseOffer").toString());
+////        Log.d(TAG, "onSuccess: "+NumberOfOfferCourses );
 // }
 //        }).addOnFailureListener(new OnFailureListener() {
 //    @Override
 //    public void onFailure(@NonNull Exception e) {
-//
+//        Toast.makeText(MainActivity.this, "eror mssaege"+e.getMessage(), Toast.LENGTH_SHORT).show();
 //    }
 //});
     Log.d(TAG, "addListner: teacher");

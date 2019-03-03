@@ -43,19 +43,13 @@ public class Tab1Fragment extends Fragment{
         RecyclerView recyclerView =rootview.findViewById(R.id.recyclerView);
 
         Button commitButton = (Button) rootview.findViewById(R.id.button);
+
         commitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 commit();
             }
         });
-//
-//        Toolbar toolbar = (Toolbar)getActivity().findViewById(R.id.app_bar);
-//        ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
-//
-//        if(getSupportActionBar() != null) {
-//            getSupportActionBar().setTitle("Review and Mark");
-//        }
 
         List<String> reviewList = Arrays.asList("anas","taha");
 

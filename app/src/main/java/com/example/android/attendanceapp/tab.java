@@ -30,7 +30,7 @@ public class tab extends AppCompatActivity {
 
     
     public void onItemClick(String name) {
-        Toast.makeText(this, "name", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, ""+name, Toast.LENGTH_SHORT).show();
 //        if(commitList.contains(name))
 //            commitList.remove(name);
 //        else

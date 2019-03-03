@@ -39,7 +39,7 @@ public class ReviewListAdapter extends RecyclerView.Adapter<ReviewListAdapter.Re
     public void onBindViewHolder(ReviewListViewHolder holder, int position) {
 
         holder.checkBox.setText(data.get(position));
-        holder.checkBox.setChecked(true);
+        holder.checkBox.setChecked(false);
 
     }
 
